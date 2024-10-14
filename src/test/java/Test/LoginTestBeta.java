@@ -16,7 +16,7 @@ import java.time.Duration;
 public class LoginTestBeta extends BaseTestBeta {
 
     @BeforeMethod
-    public void pageSetUp () {
+    public void pageSetUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -45,7 +45,7 @@ public class LoginTestBeta extends BaseTestBeta {
     }
 
     @Test
-    public void userCannotLoginWithInvalidUserName () {
+    public void userCannotLoginWithInvalidUserName() {
         homepagePageBeta.clickOnPracticeButton();
         practicePageBeta.clickonTestLoginPageButton();
         loginPageBeta.inputUsername("nonstudent");

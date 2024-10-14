@@ -11,14 +11,12 @@ public class HomepagePageBeta extends BaseTestBeta {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id= "menu-item-20")
+    @FindBy(id = "menu-item-20")
     public WebElement practiceButton;
 
-    public void clickOnPracticeButton(){
+    public void clickOnPracticeButton() {
         practiceButton.click();
     }
-
-
 
 
 }

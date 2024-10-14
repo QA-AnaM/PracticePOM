@@ -12,12 +12,12 @@ public class PracticePageBeta extends BaseTestBeta {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy ( linkText = "Test Login Page")
+    @FindBy(linkText = "Test Login Page")
     public WebElement testLoginPageButton;
 
     //----------------------------------------
 
-    public void clickonTestLoginPageButton () {
+    public void clickonTestLoginPageButton() {
         testLoginPageButton.click();
     }
 

@@ -1,11 +1,10 @@
 package Pages;
 
-import Base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ProfilePage{
+public class ProfilePage {
 
     WebDriver driver;
     WebElement logOutButton;
@@ -20,7 +19,7 @@ public class ProfilePage{
 
     //----------------
 
-    public void clickOnLogoutButton () {
+    public void clickOnLogoutButton() {
         getLogOutButton().click();
     }
 

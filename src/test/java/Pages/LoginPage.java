@@ -1,6 +1,5 @@
 package Pages;
 
-import Base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,17 +29,17 @@ public class LoginPage {
 
     //-----------------------------------
 
-    public void inputUsername (String username) {
+    public void inputUsername(String username) {
         getUsernameField().clear();
         getUsernameField().sendKeys(username);
     }
 
-    public void inputPassword (String password) {
+    public void inputPassword(String password) {
         getPasswordField().clear();
         getPasswordField().sendKeys(password);
     }
 
-    public void clickOnSubmitButton () {
+    public void clickOnSubmitButton() {
         getSubmitButton().click();
     }
 

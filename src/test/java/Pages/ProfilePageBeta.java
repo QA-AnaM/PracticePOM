@@ -7,16 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProfilePageBeta extends BaseTestBeta {
 
-    public ProfilePageBeta () {
+    public ProfilePageBeta() {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (linkText = "Log out")
+    @FindBy(linkText = "Log out")
     public WebElement logOutButton;
 
     //--------------------------------
 
-    public void clickOnLogOutButton () {
+    public void clickOnLogOutButton() {
         logOutButton.click();
     }
 

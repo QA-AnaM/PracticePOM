@@ -12,28 +12,28 @@ public class LoginPageBeta extends BaseTestBeta {
     }
 
 
-    @FindBy (id = "username" )
+    @FindBy(id = "username")
     public WebElement usernameField;
 
-    @FindBy (id = "password" )
+    @FindBy(id = "password")
     public WebElement passwordField;
 
-    @FindBy (id ="submit" )
+    @FindBy(id = "submit")
     public WebElement submitButton;
 
     //------------------------------
 
-    public void inputUsername (String username) {
+    public void inputUsername(String username) {
         usernameField.clear();
         usernameField.sendKeys(username);
     }
 
-    public void inputPassword (String password) {
+    public void inputPassword(String password) {
         passwordField.clear();
         passwordField.sendKeys(password);
     }
 
-    public void clickOnSubmitButton () {
+    public void clickOnSubmitButton() {
         submitButton.click();
     }
 
